@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bigtallbill
+ * Date: 3/26/15
+ * Time: 10:35 PM
+ */
+
+include_once __DIR__ . '/../vendor/autoload.php';
+
+$classLoader = new \Composer\Autoload\ClassLoader();
+$classLoader->add('Bigtallbill', __DIR__ . '/../src');
+$classLoader->register();
+
+$application = new \Symfony\Component\Console\Application('Go');
+$application->add(new \Bigtallbill\Go\Commands\GoCommand());
+$application->run();

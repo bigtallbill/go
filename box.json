@@ -1,0 +1,16 @@
+{
+  "alias": "composer.phar",
+  "chmod": "0755",
+  "directories": ["src"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests"],
+      "in": "vendor"
+    }
+  ],
+  "git-version": "package_version",
+  "main": "bin/go",
+  "output": "composer.phar",
+  "stub": true
+}

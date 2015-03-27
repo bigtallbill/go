@@ -1,0 +1,6 @@
+{
+  "name": "go",
+  "require": {
+    "symfony/console": "2.6.*"
+  }
+}

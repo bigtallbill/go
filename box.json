@@ -11,6 +11,6 @@
   ],
   "git-version": "package_version",
   "main": "bin/go",
-  "output": "composer.phar",
+  "output": "go.phar",
   "stub": true
 }

@@ -15,4 +15,5 @@ $classLoader->register();
 
 $application = new \Symfony\Component\Console\Application('Go');
 $application->add(new \Bigtallbill\Go\Commands\GoCommand());
+$application->add(new \Bigtallbill\Go\Commands\AddCommand());
 $application->run();

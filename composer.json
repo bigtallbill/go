@@ -1,6 +1,10 @@
 {
   "name": "go",
+  "minimum-stability": "alpha",
   "require": {
-    "symfony/console": "2.6.*"
+    "symfony/console": "2.6.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
   }
 }

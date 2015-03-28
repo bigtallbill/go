@@ -13,7 +13,8 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class AddCommand extends BaseCommand {
+class AddCommand extends BaseCommand
+{
     protected function configure()
     {
         $this->setName('add')

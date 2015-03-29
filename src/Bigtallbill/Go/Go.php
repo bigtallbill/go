@@ -59,4 +59,25 @@ class Go {
         $this->loadStorage();
         passthru($this->storage[$bookmark]);
     }
+
+    public function find($query)
+    {
+        $this->loadStorage();
+
+        $found = [];
+
+        foreach ($this->storage as $bookmark => $command) {
+            if (strpos($bookmark, $query) !== false) {
+                $found[$bookmark] = $command;
+            }
+        }
+
+        return $found;
+    }
+
+    public function getBookmarks()
+    {
+        $this->loadStorage();
+        return $this->storage;
+    }
 }

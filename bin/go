@@ -16,4 +16,7 @@ $classLoader->register();
 $application = new \Symfony\Component\Console\Application('Go');
 $application->add(new \Bigtallbill\Go\Commands\GoCommand());
 $application->add(new \Bigtallbill\Go\Commands\AddCommand());
+$application->add(new \Bigtallbill\Go\Commands\RemoveCommand());
+$application->add(new \Bigtallbill\Go\Commands\FindCommand());
+$application->add(new \Bigtallbill\Go\Commands\ListCommand());
 $application->run();

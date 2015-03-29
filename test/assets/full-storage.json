@@ -1,0 +1,5 @@
+{
+  "ls": "ls -lh",
+  "df": "df -h",
+  "which-command": "which php"
+}
